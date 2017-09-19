@@ -1,0 +1,21 @@
+We'll need to:
+    1. Open an article
+    2. Find the first link in the article
+    3. Follow the link
+    4. Repeat this process until we reach the Philosophy article.
+
+Use while loop until soup.p.a = <https://en.wikipedia.org/wiki/Philosophy>
+
+Use list to build a list of all the places I've gone
+
+I'll need to pause for a coupe seconds so wikipedia doesn't think I'm flooding their server (see robots.txt)
+
+
+page = a random starting page
+article_chain = []
+while title of page isn't 'Philosophy' and we have not discovered a cycle:
+    append page to article_chain
+    download the page content
+    find the first link in the content
+    page = that link
+    pause for a second
